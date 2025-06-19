@@ -408,19 +408,30 @@ footer {
         flex-direction: column;
         align-items: flex-start;
         padding: 10px 5%;
+        background: rgba(0, 0, 0, 0.8); /* Add visible background */
+        position: relative; /* Prevent overlap issues */
+        z-index: 1000;
+
     }
 
     .navbar {
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
         width: 100%;
         margin-top: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: black;
+        padding: 10px;
     }
 
     .navbar a {
         margin: 10px 0;
         font-size: 16px;
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        font-size: 18px;
+        color: aqua;
     }
 
     .home {
@@ -467,4 +478,12 @@ footer {
         font-size: 14px;
         padding: 10px;
     }
+    .contact-card-container {
+    padding: 120px 10px 40px; /* Push content below header */
+}
+.resume-viewer {
+    width: 100%;
+    height: 400px;
+    overflow: auto;
+}
 }
