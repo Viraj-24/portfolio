@@ -403,10 +403,11 @@ footer {
 
 /* for mobile */
 @media (max-width: 768px) {
+
     .head {
         flex-direction: column;
         align-items: flex-start;
-        padding: 15px 5%;
+        padding: 10px 5%;
     }
 
     .navbar {
@@ -414,91 +415,56 @@ footer {
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
-        gap: 10px;
         margin-top: 10px;
     }
 
     .navbar a {
-        margin: 0;
-        padding: 10px 0;
+        margin: 10px 0;
+        font-size: 16px;
     }
 
     .home {
         flex-direction: column;
         text-align: center;
-        padding: 120px 5% 40px;
-    }
-
-    .h-c {
-        max-width: 100%;
+        padding: 120px 5% 60px;
     }
 
     .h-c h1 {
-        font-size: 32px;
-    }
-
-    .h-c h3 {
         font-size: 24px;
+        line-height: 1.3;
     }
 
     .h-c p {
-        font-size: 18px;
-        margin: 15px 0 25px;
+        font-size: 16px;
+        padding: 0 10px;
+        line-height: 1.5;
+    }
+
+    .profile-img {
+        width: 200px;
+        height: 200px;
     }
 
     .media {
         position: static;
-        margin-top: 20px;
+        margin-top: 30px;
         justify-content: center;
-        gap: 15px;
     }
 
-    .about-content {
-        padding: 100px 5% 40px;
-        flex-direction: column;
-        text-align: center;
-    }
-
+    .contact-card,
     .about-card {
         width: 100%;
         padding: 20px;
     }
 
-    .contact-card-container {
-        padding: 100px 5% 40px;
-    }
-
-    .contact-card {
+    .resume-viewer {
         width: 100%;
-        padding: 20px;
+        overflow-x: auto;
     }
 
-    .contact-card input,
-    .contact-card textarea {
+    .resume-btn {
         width: 100%;
-    }
-
-    .resume-section {
-        padding: 100px 5% 40px;
-    }
-
-    .resume-viewer iframe {
-        width: 100%;
-        height: 500px;
-    }
-
-    .profile-img-section {
-        justify-content: center;
-        margin-bottom: 30px;
-    }
-
-    .profile-img {
-        width: 250px;
-        height: 250px;
-    }
-
-    .home-container {
-        flex-direction: column;
-        gap: 30px;
+        font-size: 14px;
+        padding: 10px;
     }
 }
